@@ -12,6 +12,7 @@ Vehicle : "{0700E1528AEAC774}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Mountable_Base
   SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
    m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
     Name "BTR-70 APC Mountable FIA"
+    m_Image "{F19A3202D2D35A0A}UI/Textures/EditorPreviews/Vehicles/Wheeled/BTR70/BTR70_FIA.edds"
     m_sFaction "FIA"
     m_aAuthoredLabels + {
      1001
