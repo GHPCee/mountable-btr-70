@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D4D964BAF6C53FB6}Prefabs/Vehicles/Wheeled/BTR70/vehicle_btr.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

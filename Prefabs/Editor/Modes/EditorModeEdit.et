@@ -1,0 +1,11 @@
+SCR_EditorModeEntity : "{E56F54E533ACE527}Prefabs/Editor/Modes/EditorModeBase.et" {
+ ID "54F0A77282A3AA3B"
+ components {
+  SCR_PlacingEditorComponent "{5145484399BAA2E7}" {
+   m_Registries {
+    SCR_PlaceableEntitiesRegistry "{617B464C0485DF07}" : "{D4D964BAF6C53FB6}Prefabs/Vehicles/Wheeled/BTR70/BTR70Mountable_Vehicles.conf" {
+    }
+   }
+  }
+ }
+}
