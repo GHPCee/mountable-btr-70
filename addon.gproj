@@ -1,0 +1,8 @@
+GameProject {
+ ID "BTR70Mountable"
+ GUID "617A2E90EA218AC4"
+ TITLE "BTR-70 Mountable"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
