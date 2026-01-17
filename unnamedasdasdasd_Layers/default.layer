@@ -1,0 +1,6 @@
+Vehicle BTR70_Base1 : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+ coords 1732.089 39 2867.515
+}
+GenericEntity : "{BB5E3184E607C84F}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo.et" {
+ coords 1731.685 39.01 2862.41
+}

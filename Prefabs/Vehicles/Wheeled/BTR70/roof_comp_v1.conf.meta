@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{AB9AD5856BDAF71A}Prefabs/Vehicles/Wheeled/BTR70/CargoCompartment_BTR70_Top_New.conf"
+ Name "{31C18DD6CC5A9F38}Prefabs/Vehicles/Wheeled/BTR70/roof_comp_v1.conf"
  Configurations {
   CONFResourceClass PC {
   }
