@@ -1,0 +1,27 @@
+GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  ControllersManagerComponent "{686377BFEF7FF3CE}" {
+  }
+  RigidBody "{4B42E71692C2FB79}" {
+   Mass 0
+   LinearDamping 0
+   AngularDamping 0
+   LinearSleepingThreashold 0
+   AngularSleepingThreashold 0
+   SimState None
+  }
+  SCR_BaseCompartmentManagerComponent "{686377BFD6DBDAC7}" {
+  }
+  SCR_BaseHUDComponent "{686377BFD01F33C3}" {
+  }
+  SCR_UniversalInventoryStorageComponent "{686377BFC46A1C90}" {
+  }
+  SCR_VehicleCameraDataComponent "{686377BF9E6E6341}" {
+  }
+  ActionsManagerComponent "{686377BFFC8BF602}" {
+  }
+  VehicleAnimationComponent "{686377BF97C2BAE5}" {
+  }
+ }
+}
