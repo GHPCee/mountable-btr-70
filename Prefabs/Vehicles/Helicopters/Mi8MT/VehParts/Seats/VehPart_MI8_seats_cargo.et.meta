@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{BB5E3184E607C84F}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo.et"
+ Name "{9503E8AF9FFBA67B}Prefabs/Vehicles/Helicopters/Mi8MT/VehParts/Seats/VehPart_MI8_seats_cargo.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

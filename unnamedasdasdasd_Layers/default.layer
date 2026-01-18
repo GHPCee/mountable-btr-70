@@ -1,6 +1,28 @@
 Vehicle BTR70_Base1 : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
- coords 1732.089 39 2867.515
+ coords 1721.833 39 2872.753
 }
-GenericEntity : "{BB5E3184E607C84F}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo.et" {
- coords 1731.685 39.01 2862.41
+Vehicle BTR70_Test1 : "{5B5532119A2F1ADB}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Test.et" {
+ components {
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo roof_compartments {
+     MergePhysics 1
+     Prefab "{BB5E3184E607C84F}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo.et"
+     DisablePhysicsInteraction 1
+    }
+   }
+  }
+ }
+ coords 1705.881 39 2866.219
+}
+Vehicle Ural4320_transport_filled1 : "{B845B8B82C76BA68}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_filled.et" {
+ coords 1701.166 39 2861.41
+}
+$grp GenericEntity : "{BB5E3184E607C84F}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo.et" {
+ {
+  coords 1731.685 39.01 2862.41
+ }
+ {
+  coords 1705.533 39 2860.732
+ }
 }

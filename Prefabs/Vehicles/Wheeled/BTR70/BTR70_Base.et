@@ -21,6 +21,9 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
      GetInSeatAligningOnEvent 1
      GetOutAligningOnEvent 1
      FakeDoor 1
+     AccessibilitySettings CompartmentAccessibilityContext "{686377AAB74D2665}" {
+      UseEntryPointsAsRefference 0
+     }
     }
    }
    CompartmentSlots {
@@ -30,11 +33,10 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
        "passenger_l006"
       }
       UIInfo SCR_ActionUIInfo "{686371EF6076E702}" {
-       Name "#AR-UserAction_GetIn"
+       Name "Get on:"
        Icon "{04EF6B438A9F69A1}UI/Textures/UserActions/getinaction.edds"
        m_sIconName "passenger"
       }
-      ActionTitle "Passenger"
       CanAggregate 1
       "Sort Priority" 9
      }
@@ -50,11 +52,12 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
      }
      ForcedFreeLook 1
      SkipCharacterDoorAnimationsFromSeat 1
+     SeatType 3
      DoorInfoList {
-      0
+      6
      }
      UIInfo SCR_ActionUIInfo "{686361D8C517144C}" {
-      Description "#AR-VehiclePosition_Passenger"
+      Name "#AR-VehiclePosition_Passenger"
       m_sIconName "passenger"
      }
      ContextName "passenger_l006"

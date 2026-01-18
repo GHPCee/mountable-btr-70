@@ -1,0 +1,35 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  Persistence "{686377A036662E3C}" {
+  }
+  ControllersManagerComponent "{686377A045354FA4}" {
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   CastShadow 0
+   CastFarShadow 0
+   PixelSizeFilter 0
+   RainOccluder 0
+   WetnessOccluder 0
+   ReceiveLight 0
+  }
+  SCR_BaseCompartmentManagerComponent "{686377A0265FF710}" {
+  }
+  SCR_BaseHUDComponent "{686377A01DE976F8}" {
+  }
+  SCR_DamageManagerComponent "{686377A009368569}" {
+  }
+  SCR_UniversalInventoryStorageComponent "{686377A0EB5967CE}" {
+  }
+  SCR_VehicleCameraDataComponent "{686377A0E23D9733}" {
+  }
+  ActionsManagerComponent "{686377A04EA90AF8}" {
+  }
+  VehicleAnimationComponent "{686377A0BCC86875}" {
+  }
+  RplComponent "{686377A030D0CBAC}" {
+  }
+  Hierarchy "{686377A03ECA1F27}" {
+  }
+ }
+}
