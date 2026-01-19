@@ -4,7 +4,6 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
   SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
    DoorInfoList {
     CompartmentDoorInfo "{686377AD3A6232AA}" {
-     AnimDoorIndex 21
      ContextName "door_pl006"
      EntryPositionInfo PointInfo "{686377AD12D07B55}" {
       Offset -2 0 0.5588
@@ -14,7 +13,6 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
      }
      GetInTeleport 1
      GetOutTeleport 1
-     PortalSignalName "Passenger"
      AlignDuringGetOut 1
      GetInAligningTeleport 1
      GetOutAligningTeleport 1
@@ -72,12 +70,16 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
     UserActionContext "{686371EDFCD41A70}" {
      UIInfo SCR_ActionContextUIInfo "{686371EC777165A6}" {
      }
-     ContextName "passenger_l006"
+     ContextName "passenger_action_l006"
      Position PointInfo "{686371EDF3873B0F}" {
       Offset -0.7581 1.8358 0.5588
      }
     }
    }
   }
+  Hierarchy "{6314F77063CD9FEF}" {
+   Enabled 1
+  }
  }
+ coords 0 0 0
 }

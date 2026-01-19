@@ -1,0 +1,15 @@
+GenericEntity : "{163D54DF444627CA}Prefabs/Vehicles/Core/Vehicle_Roof_Seat_Base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  VehicleAnimationComponent "{686377BF97C2BAE5}" {
+   AnimInjection AnimationAttachmentInfo "{68641E1F74991B8D}" {
+    BindingName "Vehicle"
+   }
+   AutoVariablesBind 1
+   DeactivationDelay 2
+  }
+  Hierarchy "{41BAE78C990DC478}" {
+   MergePhysics 1
+  }
+ }
+}

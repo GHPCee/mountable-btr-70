@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{62A860FB2BA50E18}Prefabs/Vehicles/Wheeled/BTR70/seat_action_v1.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

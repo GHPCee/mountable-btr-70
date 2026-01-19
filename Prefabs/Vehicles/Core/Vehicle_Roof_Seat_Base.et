@@ -1,6 +1,9 @@
 GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
  ID "4B42E71698F5739C"
  components {
+  ColliderHistoryComponent "{6132A72CCF77E788}" {
+   Enabled 1
+  }
   ControllersManagerComponent "{686377BFEF7FF3CE}" {
   }
   RigidBody "{4B42E71692C2FB79}" {
@@ -12,16 +15,102 @@ GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
    SimState None
   }
   SCR_BaseCompartmentManagerComponent "{686377BFD6DBDAC7}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{686377BC84956507}" : "{AD785BEEE9470FF3}Prefabs/Vehicles/Wheeled/BTR70/roof_door_v1.conf" {
+     ContextName "door_pl007"
+     EntryPositionInfo PointInfo "{686377BDB9B07BCB}" {
+      Offset -2 0 -0.004
+     }
+     ExitPositionInfo PointInfo "{686377BDB9B07BD8}" {
+      Offset -2 0 -0.004
+     }
+     PortalSignalName ""
+     AlignDuringGetOut 0
+     GetInAligningTeleport 0
+     GetOutAligningTeleport 0
+     GetInSeatAligningOnEvent 0
+     GetOutAligningOnEvent 0
+     AccessibilitySettings CompartmentAccessibilityContext "{686377BDB9B07BE7}" {
+      UseEntryPointsAsRefference 1
+     }
+    }
+   }
+   CompartmentSlots {
+    CargoCompartmentSlot passenger_l007 : "{6F29A49573D71137}Prefabs/Vehicles/Wheeled/BTR70/roof_comp_v2.conf" {
+     CompartmentUniqueName "45"
+     CompartmentAction SCR_GetInUserAction "{686377BDC242396F}" {
+      ParentContextList {
+       "passenger_action_l007"
+      }
+      UIInfo SCR_ActionUIInfo "{686377BDC2423972}" {
+       Name "f"
+      }
+     }
+     JumpOutAction SCR_JumpOutAction "{686377BDC242397E}" {
+      UIInfo SCR_ActionUIInfo "{68651DFC03F16617}" {
+       Name "#AR-Keybind_Eject"
+       m_sIconName "getOutCommand"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{686377BDC242397F}" {
+      UIInfo SCR_ActionUIInfo "{68651DFCCBEE86F4}" {
+       Name "#AR-UserAction_SwitchSeat"
+       m_sIconName "passenger"
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo roof_pos {
+      Offset -0.8225 1.7839 -0.022
+     }
+     SeatType 2
+     DoorInfoList {
+      0 6 1
+     }
+     UIInfo SCR_ActionUIInfo "{686377BDC242397A}" {
+      Name "123123123"
+     }
+     ContextName "passenger_l007"
+    }
+   }
   }
   SCR_BaseHUDComponent "{686377BFD01F33C3}" {
+   InfoDisplays {
+    SCR_WeaponSwitchingBaseUI "{6864EB04EF725382}" {
+    }
+   }
   }
   SCR_UniversalInventoryStorageComponent "{686377BFC46A1C90}" {
+   Enabled 0
+   StoragePurpose 0 0x1
   }
   SCR_VehicleCameraDataComponent "{686377BF9E6E6341}" {
   }
   ActionsManagerComponent "{686377BFFC8BF602}" {
+   ActionContexts {
+    UserActionContext "{686377BC0FE3FC3F}" : "{62A860FB2BA50E18}Prefabs/Vehicles/Wheeled/BTR70/seat_action_v1.conf" {
+     UIInfo SCR_ActionContextUIInfo "{686377BDE11A5520}" {
+      Icon "{04EF6B438A9F69A1}UI/Textures/UserActions/getinaction.edds"
+     }
+     ContextName "passenger_action_l007"
+     Position PointInfo "{686377BDE11A5538}" {
+      Offset -0.7579 1.8358 -0.004
+     }
+     Radius 11.12
+    }
+   }
+   AllowCrossHierarchy 1
   }
   VehicleAnimationComponent "{686377BF97C2BAE5}" {
+   AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
+   AnimInstance "{F2DBB12250B5F75A}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_vehicle.asi"
+   StartNode "VehicleMasterControl"
+   AnimInjection AnimationAttachmentInfo "{68641E1F74991B8D}" {
+    AnimGraph "{E5D9CB02597071F5}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR70.agr"
+    AnimInstance "{5F52A6DF918B0033}Assets/Vehicles/Wheeled/BTR70/workspaces/BTR_player.asi"
+    BindingName "Vehicle"
+   }
+   AutoVariablesBind 1
+   DeactivationDelay 2
   }
  }
+ coords -6.221 6.055 1.963
 }
