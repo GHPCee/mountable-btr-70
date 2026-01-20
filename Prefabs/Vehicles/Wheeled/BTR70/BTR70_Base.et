@@ -682,6 +682,30 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
       Offset 0.7584 1.9777 -2.2114
      }
     }
+    UserActionContext "{686776688B698559}" : "{3C4049B894288017}Prefabs/Vehicles/Wheeled/BTR70/seat_action_v2.conf" {
+     ContextName "passenger_action_l012"
+     Position PointInfo "{68677674BFE6C1DF}" {
+      Offset -0.7581 1.897 1.3411
+     }
+    }
+    UserActionContext "{6867766887E2A1EE}" : "{3C4049B894288017}Prefabs/Vehicles/Wheeled/BTR70/seat_action_v2.conf" {
+     ContextName "passenger_action_l013"
+     Position PointInfo "{68677674BFE6C1DF}" {
+      Offset -0.7581 1.897 1.9105
+     }
+    }
+    UserActionContext "{68677668863B38A4}" : "{3C4049B894288017}Prefabs/Vehicles/Wheeled/BTR70/seat_action_v2.conf" {
+     ContextName "passenger_action_r012"
+     Position PointInfo "{68677674BFE6C1DF}" {
+      Offset 0.7581 1.897 1.3411
+     }
+    }
+    UserActionContext "{686776688644FB33}" : "{3C4049B894288017}Prefabs/Vehicles/Wheeled/BTR70/seat_action_v2.conf" {
+     ContextName "passenger_action_r013"
+     Position PointInfo "{68677674BFE6C1DF}" {
+      Offset 0.7581 1.897 1.9105
+     }
+    }
    }
   }
   Hierarchy "{6314F77063CD9FEF}" {
