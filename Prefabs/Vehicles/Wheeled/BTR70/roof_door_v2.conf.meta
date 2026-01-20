@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F39072AD56CA81FC}Prefabs/Vehicles/Wheeled/BTR70/roof_door_v2.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

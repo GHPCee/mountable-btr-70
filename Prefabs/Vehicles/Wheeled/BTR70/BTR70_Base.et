@@ -3,7 +3,7 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
  components {
   SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
    DoorInfoList {
-    CompartmentDoorInfo "{686377AD3A6232AA}" {
+    CompartmentDoorInfo "{686377AD3A6232AA}" : "{F39072AD56CA81FC}Prefabs/Vehicles/Wheeled/BTR70/roof_door_v2.conf" {
      ContextName "door_pl006"
      EntryPositionInfo PointInfo "{686377AD12D07B55}" {
       Offset -2 0 0.5588
@@ -23,9 +23,18 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
       UseEntryPointsAsRefference 0
      }
     }
+    CompartmentDoorInfo "{6867767FE4570DF3}" : "{F39072AD56CA81FC}Prefabs/Vehicles/Wheeled/BTR70/roof_door_v2.conf" {
+     ContextName "door_pl007"
+     EntryPositionInfo PointInfo "{6867767FE9713332}" {
+      Offset -2 0 -0.004
+     }
+     ExitPositionInfo PointInfo "{6867767FE971332C}" {
+      Offset -2 0 -0.004
+     }
+    }
    }
    CompartmentSlots {
-    CargoCompartmentSlot Passenger_l006 {
+    CargoCompartmentSlot Passenger_l006 : "{9B21E30D7E0A7943}Prefabs/Vehicles/Wheeled/BTR70/roof_comp_v3.conf" {
      CompartmentAction SCR_GetInUserAction "{686361DFB1C2F49C}" {
       ParentContextList {
        "passenger_l006"
@@ -39,10 +48,42 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
       "Sort Priority" 9
      }
      GetOutAction SCR_GetOutAction "{686361D9C992511E}" {
+      UIInfo SCR_ActionUIInfo "{68677671839C0928}" {
+       Name "#AR-UserAction_GetOut"
+       m_sIconName "getOutCommand"
+      }
+      VisibilityRange 5
+      CanAggregate 1
+      "Sort Priority" 12
      }
      JumpOutAction SCR_JumpOutAction "{686361D9BD34331C}" {
+      UIInfo SCR_ActionUIInfo "{6867767250A4DD23}" {
+       Name "#AR-Keybind_Eject"
+       m_sIconName "getOutCommand"
+      }
+      "Sort Priority" 12
      }
      SwitchSeatAction SCR_SwitchSeatAction "{686361D9B5D6F582}" {
+      UIInfo SCR_ActionUIInfo "{6867767375C9EF88}" {
+       Name "#AR-UserAction_SwitchSeat"
+       m_sIconName "passenger"
+      }
+      VisibilityRange 5
+      "Sort Priority" 9
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{6867767DB3C50459}" {
+       ParentContextList {
+        "passenger_action_l006"
+       }
+       UIInfo SCR_ActionUIInfo "{6867767D9E78CC56}" {
+        Name "#AR-UserAction_RemoveCasualty"
+        m_sIconName "use"
+       }
+       Duration 1
+       CanAggregate 1
+       "Sort Priority" 10
+      }
      }
      PassengerPositionInfo EntitySlotInfo roof_pos {
       Offset -0.8225 1.7839 0.5588
@@ -51,8 +92,7 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
      ForcedFreeLook 1
      SkipCharacterDoorAnimationsFromSeat 1
      SeatType 3
-     DoorInfoList {
-      6
+     DoorInfoList +{
      }
      UIInfo SCR_ActionUIInfo "{686361D8C517144C}" {
       Name "#AR-VehiclePosition_Passenger"
@@ -62,6 +102,39 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
      m_iCompartmentSection 1
      m_ScreenShakeData SCR_BaseScreenShakeData "{686361D890776BD3}" {
      }
+    }
+    CargoCompartmentSlot Passenger_l007 : "{9B21E30D7E0A7943}Prefabs/Vehicles/Wheeled/BTR70/roof_comp_v3.conf" {
+     CompartmentAction SCR_GetInUserAction "{6867767E31C7ACBE}" {
+      ParentContextList {
+       "passenger_action_l007"
+      }
+     }
+     GetOutAction SCR_GetOutAction "{6867767E31C7ACAC}" {
+      ParentContextList {
+       "passenger_action_l007"
+      }
+     }
+     JumpOutAction SCR_JumpOutAction "{6867767E31C7ACA9}" {
+      ParentContextList {
+       "passenger_action_l007"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{6867767E31C7ACAB}" {
+      ParentContextList {
+       "passenger_action_l007"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{6867767E31C7AC57}" {
+       ParentContextList {
+        "passenger_action_l007"
+       }
+      }
+     }
+     DoorInfoList {
+      7
+     }
+     ContextName "passenger_l007"
     }
    }
   }
