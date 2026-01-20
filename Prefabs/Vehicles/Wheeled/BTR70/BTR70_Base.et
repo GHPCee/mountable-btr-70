@@ -565,7 +565,7 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
      DoorInfoList {
       16
      }
-     ContextName "passenger_l010"
+     ContextName "passenger_r010"
     }
     CargoCompartmentSlot Passenger_r011 : "{9B21E30D7E0A7943}Prefabs/Vehicles/Wheeled/BTR70/roof_comp_v3.conf" {
      CompartmentAction SCR_GetInUserAction "{6867767E31C7ACBE}" {
@@ -602,6 +602,7 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
      DoorInfoList {
       17
      }
+     ContextName "passenger_r011"
     }
    }
   }
