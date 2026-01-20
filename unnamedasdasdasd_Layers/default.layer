@@ -2,6 +2,28 @@ GenericEntity : "{163D54DF444627CA}Prefabs/Vehicles/Core/Vehicle_Roof_Seat_Base.
  coords 1695.411 44.089 2866.719
 }
 Vehicle BTR70_Base1 : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+ components {
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   CompartmentSlots {
+    CargoCompartmentSlot Passenger_l008 {
+     CompartmentAction SCR_GetInUserAction "{6867767E31C7ACBE}" {
+      UIInfo SCR_ActionUIInfo "{6867766562154D9D}" {
+       Name "Get on:"
+       Icon "{04EF6B438A9F69A1}UI/Textures/UserActions/getinaction.edds"
+       m_sIconName "passenger"
+      }
+      CanAggregate 1
+     }
+     GetOutAction SCR_GetOutAction "{6867767E31C7ACAC}" {
+      UIInfo SCR_ActionUIInfo "{68677665F4ED9CA2}" {
+       Name "#AR-UserAction_GetOut"
+       m_sIconName "getOutCommand"
+      }
+     }
+    }
+   }
+  }
+ }
  coords 1699.177 39 2870.238
 }
 GenericEntity : "{5F533EBE61514610}Prefabs/Vehicles/Wheeled/Ural4320/VehParts/Ural4320_cargo_canvas.et" {
