@@ -328,6 +328,43 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
      }
      ContextName "passenger_l011"
     }
+    CargoCompartmentSlot Passenger_r006 : "{9B21E30D7E0A7943}Prefabs/Vehicles/Wheeled/BTR70/roof_comp_v3.conf" {
+     CompartmentAction SCR_GetInUserAction "{6867767E31C7ACBE}" {
+      ParentContextList {
+       "passenger_action_r006"
+      }
+     }
+     GetOutAction SCR_GetOutAction "{6867767E31C7ACAC}" {
+      ParentContextList {
+       "passenger_action_r006"
+      }
+     }
+     JumpOutAction SCR_JumpOutAction "{6867767E31C7ACA9}" {
+      ParentContextList {
+       "passenger_action_r006"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{6867767E31C7ACAB}" {
+      ParentContextList {
+       "passenger_action_r006"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{6867767E31C7AC57}" {
+       ParentContextList {
+        "passenger_action_r006"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo roof_pos {
+      Offset 0.8225 1.7839 0.5588
+      Angles 0 90 0
+     }
+     DoorInfoList {
+      12
+     }
+     ContextName "passenger_r006"
+    }
    }
   }
   ActionsManagerComponent "{C97BE5489221AE18}" {
