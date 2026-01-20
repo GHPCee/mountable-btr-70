@@ -212,6 +212,9 @@ Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
        }
       }
      }
+     PassengerPositionInfo EntitySlotInfo roof_pos {
+      Offset -0.8225 1.7839 -0.5869
+     }
      DoorInfoList {
       8
      }
